@@ -16,6 +16,21 @@ An example invocation would be:
 docker run -e SQUID_USERNAME=foo -e SQUID_PASSWORD=bar -p 3128:3128 robhaswell/squid-authenticated
 ```
 
+Or in docker-compose:
+
+```
+version: "2"
+services:
+  squid:
+    build: https://github.com/jsmootiv/squid-docker-simple-auth.git#master
+    build: .
+    ports:
+      - 3128:3128
+    environment:
+      - SQUID_USERNAME=foo
+      - SQUID_PASSWORD=bar
+```
+
 Details
 =======
 
