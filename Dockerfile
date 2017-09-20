@@ -1,5 +1,5 @@
 FROM ubuntu:17.04
-MAINTAINER Jimi Smoot <jimi@jsfour.com>
+MAINTAINER Rob Haswell <me@robhaswell.co.uk>
 
 RUN mkdir /proxy
 WORKDIR /proxy
