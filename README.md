@@ -23,7 +23,6 @@ version: "2"
 services:
   squid:
     build: https://github.com/jsmootiv/squid-docker-simple-auth.git#master
-    build: .
     ports:
       - 3128:3128
     environment:
