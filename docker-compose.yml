@@ -1,0 +1,9 @@
+version: "2"
+services:
+  squid:
+    build: .
+    ports:
+      - 3128:3128
+    environment:
+      - SQUID_USERNAME=foo
+      - SQUID_PASSWORD=bar
